@@ -1,0 +1,63 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+#main-doc {
+  font-family:sans-serif;
+  position: absolute;
+  margin-left: 320px;
+  padding: 20px;
+}
+#Introduction {
+  color:black;
+}
+code{
+  background-color:silver;
+  font-weight:bold;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+}
+#navbar{
+  min-width:290px;
+  width:300px;
+  z-index:1;
+  left:0;
+  top:0;
+  overflow-x:hidden;
+  height:1000px;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  overflow:hidden;
+  padding:0px;
+  text-align:left;
+  background-color: white;
+  color:black;
+  position:fixed;
+  margin-top:0px;
+}
+.nav-link{
+  color:white;
+  background-color:gray;
+  text-decoration:none;
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 15px;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+@media (min-width 300px) {
+  #main-doc {
+  grid-template-areas:
+  "nav header"
+  "nav main"
+  }
+}
+#main-doc {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  padding-left:300px;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+</style>
